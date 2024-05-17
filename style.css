@@ -1,51 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
 .calculator {
-    background-color: black;
-    color: aliceblue;
-    width: 400px; /* Increased width */
-    margin: 20px auto; /* Increased margin */
-    padding: 30px; /* Increased padding */
-    border: 2px solid #009688; /* Changed border color */
-    border-radius: 10px; /* Increased border-radius */
-}
-.plus{
-    grid-row: span2;
-}
-.result {
-    
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: right;
+    width: 250px;
+    margin: 0 auto;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: black;
 }
-input[type="button"] {
-  
-     font-family: Arial, Helvetica, sans-serif; 
-     
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    font-size: 20px;
-    outline: bisque;
+
+.display {
+    width: 95%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px  5px 5px 5px;
+    font-size: 18px;
+    text-align: right;
+    border-radius: 10%;
+    background-color: rgb(171, 241, 218);
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
     cursor: pointer;
-color: aliceblue;
-background-color: black;
-border: beige red ;
-
-}
-
-
-.number-buttons {
-    float: right;
-    background-color: black;
     color: white;
+    background: url('../img/btn.PNG') no-repeat center center;
+    background-size: cover;
+    border-radius: 10%;
+
 }
-.operation-buttons {
-    float: left;
-    background-color: black;
-    color: white;
+#c{
+    grid-column: span 2;
+    background: none;
+    
+    background-color: red;
+    border-radius: 20%;
+}
+#pls{
+    grid-row: span 2;
+}
+#eql{
+    background: none;
+    background-color: rgb(23, 144, 243);
 }
 
-
+button:hover {
+    background-color: #ddd;
+}
